@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>w i d e . m o e</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root {
+            --bg-color: #ffdb58;
+            --panel-color: #ffeba5;
+            --text-color: #444;
+
+            --text-link-color: pink;
+            --text-link-hover-color: red;
+
+            --space-xs: 4px;
+            --space-s: 8px;
+            --space-m: 16px;
+            --space-l: 32px;
+            --space-xl: 64px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #4b3900;
+                --bg-color-gradient-start: #654c00;
+                --background: linear-gradient(135deg, var(--bg-color-gradient-start), var(--bg-color));
+                --panel-color: #a58000;
+                --text-color: white;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                align-items: inherit !important;
+                background-color: red !important;
+            }
+
+            .main-panel {
+                width: 100vw;
+                height: 100vh;
+                max-width: 100%;
+                border-radius: 0;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Atkinson Hyperlegible Next', sans-serif;
+            background: var(--background);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2
+        }
+
+        .wide-text {
+            letter-spacing: 1rem;
+            text-indent: 1rem; /* wide letter-spacing adds a space after the last character, making text appear off-center. */
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* max-width: 650px; */
+            min-height: 100vh;
+        }
+
+        .main-panel {
+            background-color: var(--panel-color);
+            border-radius: 16px;
+            padding: var(--space-l) var(--space-xl);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        a,
+        a:visited {
+            color: var(--text-link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--text-link-hover-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-panel">
+            <header>
+                <h1 class="wide-text">wide.moe</h1>
+                <aside>✘˵╹◡╹˶✘</aside>
+            </header>
+
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://sop-ffo.wide.moe">Stranger of Paradise: Final Fantasy Origin build sim</a></li>
+            </ul>
+
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://codeberg.org/Yunocchi">Codeberg</a></li>
+                <li><a href="https://github.com/Yunotchi">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
